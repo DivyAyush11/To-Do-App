@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;  
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url(images/background.png);
+    background-color: #fafafa; /*just in case the image doesn't load*/
+    background-size: cover;
+    background-position: center;
+
+}
+.app-container{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 20px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+}
+.todo-app img{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 4px 5px 5px 8px;
+    /* padding-bottom: 3px; */
+    /* position: relative; */
+}
+.todo-app h2{
+    display: flex;
+    align-items: center;
+}
+.type-row{
+    margin-top: 20px;
+}
+.form-control{
+    background-color: #edeef0;
+    border: 2px solid #ddd;
+    color: #333;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+.form-control:focus {
+    border-color: #F8B195;
+    box-shadow: none;              
+    background-color: #edeef0eb;   
+}
+#add-btn{
+    background-color: #F67280;
+    border-color: #F67280;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px;
+    user-select: none; 
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+ul li i{
+    /* position: absolute;
+    left: 8px;
+    top: 9px; */
+    margin-right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+.delete-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+/*Giving it a button effect*/
+    font-size: 22px;
+    color: #555;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.delete-btn:hover {
+    background-color: #f0f0f0;
+}
