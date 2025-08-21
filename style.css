@@ -99,3 +99,12 @@ li.checked {
 .delete-btn:hover {
     background-color: #f0f0f0;
 }
+.edit-btn {
+    position: absolute;   /* Position it to the left of the delete button */
+    right: 50px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px; /* Slightly smaller than delete icon */
+    color: #555;
+    cursor: pointer;
+    }
